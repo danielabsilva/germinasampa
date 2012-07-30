@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Germina Sampa</title>
+    <link rel="stylesheet" href="map.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="shortcut icon" href="img/flor.png" type="image/x-icon" />
+    <script src="ext/jquery.min.js"></script>
+    <script>
+    
+        $(document).ready(function(){
+            
+                $("#nav a").click(function(e){
+                        e.preventDefault();
+                        $($(this).attr("href")).toggle();
+                });
+        });
+    </script>
+</head>
+<body class="right">
+    <div id="header" style="height: 60px;"><div class="limiter">
+        <img src="img/germinobomba.png" height="70px" style="top: 10%">
+        <h1>GERMINA SAMPA</h1>
+    </div></div>
+    <div id="content"><div class="limiter">
+        <div id="about">
+            <p>Essas são áreas gramadas em São Paulo. Quer ajudá-las a germinar?</p>
+        </div>
+        <h2>Faça Germinobombas!</h2>
+        <div id="nav" class="layers">
+          <a href="#sementes">Sugestões de sementes</a>
+            <span id="sementes">
+                <p>1. Sementes de alimentícias:</p>
+                <p>Plantas alimentícias não convencionais (PANC)*:</p>
+                <p>bel (talinum paniculatum), caruru (Amaranthus retroflexus), capuchinha (tropaeolum majus), amaranto (amaranthus cruentus), caratim (solanum nigrum), urucum (Bixa orellana), bertalha (basella alba, basella rubra), ora-pro-nobis (Pereskia aculeata, Pereskia grandiflora, Pereskia alba), pincel (Emilia sonchifolia), dente de leão (Taraxacum officinale), serralha (Sonchus oleraceus), aroeira-pimenta (Schinus terebinthifolium).</p>
+                <p>Plantas alimentícias convencionais: milho, feijão, feijão guandu, lentilhas, abobora, tomate, tomate cereja, sementes de girassol, alpiste, urucum, painço, goiaba, mamão, amora, carambola, limão-cravo.</p>
+                <p>*As PANCS são plantas que tem maior chance de sobreviver, especialmente em um meio urbano, pois ainda não foram transformadas em hortaliças comumente comercializadas. Estas precisam de tantos cuidados com incidência solar, solo, irrigação que a sobrevivência fica mais difícil.</p>
+                <p>2. Sementes de plantas medicinais:</p>
+                <p>picão, camomila, alecrim, erva cidreira.</p>
+                <p>3. outras</p>
+                <p>cabaça, bucha, mirra, jasmim, lírio, papoula, ganja.</p>
+            </span>
+          <a href="#ingredientes">Ingredientes</a>
+            <span id="ingredientes">
+                <p>- Argila</p>
+                <p>- Substrato ou adubo</p>
+                <p>- Sementes</p>
+            </span>
+          <a href="#comofazer">Como fazer</a>
+            <span id="comofazer">
+                <p>1. Misture num balde duas partes de sementes e três de adubo (orgânico!! Nada de NPK ou outros adubos químicos!), depois acrescente cinco partes de argila em pó. Jogue água aos poucos e vá misturando até formar uma massa úmida. Cuidado para não deixar ficar molhado a ponto da massa ficar lamacenta.</p>
+                <p>2. Enrole bolinhas de um a três centímetros de diâmetro.</p>
+                <p>3. O ideal é usar as bombas num tempo de até três dias, pois a umidade tende a induzir a germinação das plantas e, a partir deste momento, elas precisam estar no solo e ser regadas pela chuva.</p>
+                <p>4. Jogue as bolas de sementes nos locais sugeridos acima ou onde você achar que as plantas têm boa chance de sobrevivência. É importante conferir se o lugar recebe chuva e luz. Use aproximadamente uma bola para cada três metros quadrados.</p>
+            </span>
+          <a href="#areas" >Em quais áreas lançar</a>
+            <span id="areas">
+                <p>Terrenos baldios com ou sem muro, linha de trem (é só atirar pela janela), vasos e canteiros abandonados, canteiros centrais das ruas, praças abandonadas, ao lado de muros...</p>
+            </span>
+        </div>
+        <h3>ATENÇÃO</h3>
+        <p>Se você quiser ter sucesso na germinação e crescimento das plantas, priorize o bombardeio nas épocas chuvosas (de Fevereiro a Outubro em São Paulo).</p>
+        <p>Dica: Você pode guardar e replantar sementes de frutas com caroços grandes como abacate, manga, jaca etc. O armazenamento deve ser feito em local seco e que bata sol.</p>
+        <h2>Procure sua região</h2>
+        <div data-control='geocode' id="search">
+          <form class="geocode">
+            <input placeholder='Search for an address' type="text">
+            <input type='submit' />
+            <div id='geocode-error'></div>
+          </form>
+        </div>
+    </div></div>
+    <div id="map" class="map">
+        <iframe width="100%" height="100%" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?viz=MAP&amp;q=select+col1+from+1nCSbkdhNBsiUDKqs_mt-abgQCzhsL2J7bx-2l3k&amp;h=true&amp;lat=-23.531811153455234&amp;lng=-46.49574915820311&amp;z=10&amp;t=1&amp;l=col1"></iframe>
+    </div>
+
+    <!-- External libraries and site script -->
+
+  </body>
+</html>
